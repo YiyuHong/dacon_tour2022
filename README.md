@@ -40,7 +40,7 @@ We mixed the test data and train data to train a new model where the label for t
 Run following script to do knowledge distillation. Change line 359~365 to your own data path.
 
 ```
-python train_and_infer.py
+python train_and_infer_distill.py
 ```
 The output result in `distill_submit_5fold.csv` yields public leaderboard score: 0.86447, private leaderboard score: 0.86012.
 
