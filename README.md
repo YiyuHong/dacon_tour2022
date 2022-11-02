@@ -37,12 +37,12 @@ We also have tried distillation using the predicted ensembled test result.
 
 We mixed the test data and train data to train a new model where the label for the test data is the ensembled predicted probability of test sample in the `seed_wise_ensemble` folder.
 
-Run following script to do knowledge distillation.
+Run following script to do knowledge distillation. Change line 359~365 to your own data path.
 
 ```
 python train_and_infer.py
 ```
-
+The output result in `distill_submit_5fold.csv` yields public leaderboard score: 0.86447, private leaderboard score: 0.86012.
 
 
 
