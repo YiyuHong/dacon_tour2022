@@ -42,7 +42,7 @@ Run following script to do knowledge distillation. Change line 359~365 to your o
 ```
 python train_and_infer_distill.py
 ```
-The output result in `distill_submit_5fold.csv` yields public leaderboard score: 0.86447, private leaderboard score: 0.86012.
+The output result file `distill_submit_5fold.csv` yields public leaderboard score: 0.86447, private leaderboard score: 0.86012.
 
 
 
