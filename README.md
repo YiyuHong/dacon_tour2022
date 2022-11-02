@@ -3,7 +3,10 @@ Train and test code of team hyy (private learderboard 9th) for 2022 관광데이
 
 https://dacon.io/competitions/official/235978/overview/description
 
-Only text information is used.
+Only text information is used
+
+Method description please refer to `tour2022(team_hyy)(2022.11.02).pdf`
+
 ## Requirements
 
 - pandas
