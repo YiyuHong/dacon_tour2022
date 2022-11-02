@@ -9,8 +9,8 @@ Only text information is used.
 - pandas
 - numpy
 - scikit-learn
-- pytorch
-- transformers
+- pytorch >=1.12.1
+- transformers >=4.22.2
 
 ## Usage
 
