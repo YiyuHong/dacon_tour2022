@@ -33,7 +33,7 @@ python ensemble_seed_wise_results.py
 ```
 The output result file `submit.csv` in the `seed_wise_ensemble` folder yields public leaderboard score: 0.86543, private leaderboard score: 0.85923.
 
-We also have tried distillation using the predicted ensembled test result. 
+We also have tried knowledge distillation learning using the predicted ensembled test result. 
 
 We mixed the test data and train data to train a new model where the label for the test data is the ensembled predicted probability of test sample in the `seed_wise_ensemble` folder.
 
