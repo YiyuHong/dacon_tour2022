@@ -35,7 +35,7 @@ The output result file `submit.csv` in the `seed_wise_ensemble` folder yields pu
 
 We also have tried knowledge distillation learning using the predicted ensembled test result. 
 
-We mixed the test data and train data to train a new model where the label for the test data is the ensembled predicted probability of test sample in the `seed_wise_ensemble` folder.
+We mixed the test data and train data to train a new model where the label for the test data is the ensembled predicted probability, in the `seed_wise_ensemble` folder, of test sample.
 
 Run following script to do knowledge distillation. Change line 359~365 to your own data path.
 
