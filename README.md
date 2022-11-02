@@ -1,1 +1,49 @@
-# dacon_tour2022
+# Dacon Tour2022
+Train and test code of team hyy (private learderboard 9th) for 2022 관광데이터 AI 경진대회
+
+https://dacon.io/competitions/official/235978/overview/description
+
+Only text information is used.
+## Requirements
+
+- pandas
+- numpy
+- scikit-learn
+- pytorch
+- transformers
+
+## Usage
+
+Run following script by changing line 319~324 to your own data path.
+
+You should run the script 5 times by setting seed from 40 to 44. Because we will do ensemble on the 5 results.
+
+GPU with larger than 24GB memory is required. However, if your memory is insufficient, you can reduce batch_size or max_length to fit to your device.
+
+It will take nearly 20 hours for one run.
+```
+python train_and_infer.py
+```
+
+After run 5 times, you will get 5 result folders (model_seed_40, model_seed_41...)
+
+And then run following script by changing line 7~21 to your own data path to get ensemble of the 5 results.
+```
+python ensemble_seed_wise_results.py
+```
+The output result file `submit.csv` in the `seed_wise_ensemble` folder yields public leaderboard score: 0.86543, private leaderboard score: 0.85923.
+
+We also have tried distillation using the predicted ensembled test result. 
+
+We mixed the test data and train data to train a new model where the label for the test data is the ensembled predicted probability of test sample in the `seed_wise_ensemble` folder.
+
+Run following script to do knowledge distillation.
+
+```
+python train_and_infer.py
+```
+
+
+
+
+
