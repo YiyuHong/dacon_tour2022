@@ -360,7 +360,8 @@ def main():
     test_csv_path = r'test.csv'     ### change to your path
     sample_submit_csv_path = r'sample_submission.csv'   ### change to your path
 
-    ### predicted probability saved dir, and also the results will save in this dir
+    ### predicted probability saved dir, and distill model save dir
+    predicted_probs_dir = f"seed_wise_ensemble"
     model_save_dir = f"seed_wise_ensemble"
 
     ###################################################################################################################
