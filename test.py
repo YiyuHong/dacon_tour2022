@@ -199,11 +199,11 @@ def main():
     ###################################################################################################################
     ## input output path setting and seed setting
     ###################################################################################################################
-    train_csv_path = r'E:\Projects\dacon\tour2022\data\open\train.csv'  ### change to your path
-    test_csv_path = r'E:\Projects\dacon\tour2022\data\open\test.csv'    ### change to your path
-    sample_submit_csv_path = r'E:\Projects\dacon\tour2022\data\open\sample_submission.csv'                   ### change to your path
-    model_checkpoint_path = r'E:\Projects\dacon\tour2022\data\models\final_submission\model_seed_42\fold_1_checkpoint_11_vs_0.83597.pth'
-    result_save_dir = r"E:\Projects\dacon\tour2022\data\models\tmp_result"
+    train_csv_path = r'train.csv'                         ### change to your path
+    test_csv_path = r'test.csv'                           ### change to your path
+    sample_submit_csv_path = r'sample_submission.csv'     ### change to your path
+    model_checkpoint_path = r'checkpoint.pth'
+    result_save_dir = r"result_save_dir"
     ###################################################################################################################
     ###################################################################################################################
 
