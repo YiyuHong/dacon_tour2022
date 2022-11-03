@@ -52,4 +52,15 @@ The output result file `distill_submit_5fold.csv` yields public leaderboard scor
 If you'd like to only run for test with the trained weights. run `test.py` by changing `line 202~206` to your own data path.
 And then run `ensemble_seed_wise_results.py` to get your ensemble results.
 
+### Results Table
+
+|model|public LB|private LB|
+|---|---|---|
+|seed40|0.85888|0.85806|
+|seed41|0.86038|0.86077|
+|seed42|||
+|seed43|||
+|seed44|0.86350|0.86018|
+|ensemble_seeds|0.86543|0.85923|
+|distillation|0.86447|0.86012|
 
