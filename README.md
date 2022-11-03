@@ -62,5 +62,5 @@ And then run `ensemble_seed_wise_results.py` to get your ensemble results.
 |seed43|||
 |seed44|0.86350|0.86018|
 |ensemble_seeds|0.86543|0.85923|
-|distillation|0.86447|*0.86012*|
+|distillation|0.86447|**0.86012**|
 
