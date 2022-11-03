@@ -16,8 +16,8 @@ Method description please refer to `tour2022(team_hyy)(2022.11.02).pdf`
 - transformers >=4.22.2
 
 ## Usage
-
-Run following script by changing line 319~324 to your own data path.
+### Training and Infer
+Run following script by changing `line 319~324` to your own data path.
 
 You should run the script 5 times by setting seed from 40 to 44. Because we will do ensemble on the 5 results.
 
@@ -30,7 +30,7 @@ python train_and_infer.py
 
 After run 5 times, you will get 5 result folders (model_seed_40, model_seed_41...)
 
-And then run following script by changing line 7~21 to your own data path to get ensemble of the 5 results.
+And then run following script by changing `line 7~21` to your own data path to get ensemble of the 5 results.
 ```
 python ensemble_seed_wise_results.py
 ```
@@ -47,6 +47,9 @@ python train_and_infer_distill.py
 ```
 The output result file `distill_submit_5fold.csv` yields public leaderboard score: 0.86447, private leaderboard score: 0.86012.
 
+### Only Test
 
+If you'd like to only run for test with the trained weights. run `test.py` by changing `line 202~206` to your own data path.
+And then run `ensemble_seed_wise_results.py` to get your ensemble results.
 
 
