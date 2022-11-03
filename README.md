@@ -49,8 +49,10 @@ The output result file `distill_submit_5fold.csv` yields public leaderboard scor
 
 ### Only Test
 
-If you'd like to only run for test with the trained weights. run `test.py` by changing `line 202~206` to your own data path.
+If you'd like to only run for test with the trained weights. run `test.py` by changing `line 202~206` to your own data path and model weight path.
 And then run `ensemble_seed_wise_results.py` to get your ensemble results.
+
+The model weights and corresponding results files are at https://doi.org/10.5281/zenodo.7275490
 
 ### Results Table
 
