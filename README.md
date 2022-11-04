@@ -60,8 +60,8 @@ The model weights and corresponding results files are at https://doi.org/10.5281
 |---|---|---|
 |seed40|0.85888|0.85806|
 |seed41|0.86038|0.86077|
-|seed42|||
-|seed43|||
+|seed42|0.85961|0.85592|
+|seed43|0.86104|0.85540|
 |seed44|0.86350|0.86018|
 |ensemble_seeds|0.86543|0.85923|
 |distillation|0.86447|**0.86012**|
